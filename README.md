@@ -11,11 +11,8 @@
 
 Гистограммы экпериментов: 
 
-<object data="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/raw/main/img/len_hist.H3K9me9_SJSA1.ENCFF921OTR.hg38.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/raw/main/img/len_hist.H3K9me9_SJSA1.ENCFF921OTR.hg38.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![alt text](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF157SWY.hg38.png)
+![alt text](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF157SWY.hg38.png)
 
 **Переводим координаты из hg38 в hg19**, скачиваем необходимые данные о переводе для liftOver
 
