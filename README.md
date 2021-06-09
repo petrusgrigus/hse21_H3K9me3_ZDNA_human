@@ -73,8 +73,18 @@
 Находим пересечения, строим гистограмму
 
 `bedtools intersect -a DeepZ.bed -b H3K9me9_SJSA1.merge.hg19.bed > H3K9me9_SJSA1.intersect_with_DeepZ.bed`
-![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/0af1b11c009fce04ac75dc00b78c1101b88395e0/img/len_hist.H3K9me9_SJSA1.intersect_with_DeepZ.png)
+![]()
+<p float="left">
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/0af1b11c009fce04ac75dc00b78c1101b88395e0/img/len_hist.H3K9me9_SJSA1.intersect_with_DeepZ.png" width="450"/>
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/5b862801f147237feb08c675a27a61f04a0ad24d/img/chip_seeker.H3K9me9_SJSA1.intersect_with_DeepZ.plotAnnoPie.png" width="450" /> 
+</p>
 
 
 ## Визуализируем в геномном браузере
 Визуализируем в геномном браузере исходные участки стр-ры ДНК, а также их пересечения с гистоновой меткой
+
+![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/17e866b5e230bac04da628febaef7b8c9e82266d/img/intersect1.PNG)
+`chr10:103990644-103990659`
+
+![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/5b862801f147237feb08c675a27a61f04a0ad24d/img/intersect2.PNG)
+`chr10:104210482-104210530`
