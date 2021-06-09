@@ -10,6 +10,7 @@
 `zcat ENCFF157SWY.bed.gz | cut -f1-5 > H3K9me9_SJSA1.ENCFF157SWY.hg38.bed`
 
 **Гистограммы длин:**
+Строим их с помощью скрипта `len_hist.R`
 
 <p float="left">
   <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF157SWY.hg38.png" width="450" />
@@ -34,7 +35,7 @@
 
 ### Отбросим outliers
 
-Я выбрал отбросить пики длиннее, чем 700, так график получается достаточно равномерным
+Я выбрал отбросить пики длиннее, чем 700, так график получается достаточно равномерным, `filter_peaks.R`
 
 <p float="left">
   <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/99281436d8fa3e48e44cbd55c696595d085808b3/img/filter_peaks.H3K9me9_SJSA1.ENCFF157SWY.hg19.filtered.hist.png" width="450" />
@@ -42,7 +43,7 @@
 </p>
 
 ### Анализ расположения меток
-Смотрим, где располагаются пики гистоновой метки относительно аннотированных генов
+Смотрим, где располагаются пики гистоновой метки относительно аннотированных генов, скрипт `chip_seeker.R`
 
 <p float="left">
   <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/b0b45867b24ed6b1ebe890b82b261c7f85d12ddb/img/chip_seeker.H3K9me9_SJSA1.ENCFF157SWY.hg19.filtered.plotAnnoPie.png" width="450" /> 
@@ -81,10 +82,16 @@
 
 
 ## Визуализируем в геномном браузере
-Визуализируем в геномном браузере исходные участки стр-ры ДНК, а также их пересечения с гистоновой меткой
+Визуализируем в геномном браузере исходные участки стр-ры ДНК, а также их пересечения с гистоновой меткой, сессия: http://genome.ucsc.edu/s/pvgrigorev/hse21_H3K9me3_ZDNA_human
 
 ![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/17e866b5e230bac04da628febaef7b8c9e82266d/img/intersect1.PNG)
 `chr10:103990644-103990659`
 
 ![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/5b862801f147237feb08c675a27a61f04a0ad24d/img/intersect2.PNG)
 `chr10:104210482-104210530`
+
+
+## GO-анализ для полученных уникальных генов
+Ассоциируем полученные пересечения с ближайшими генами, скрипт `ChIPpeakAnno.R`
+
+![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/823094df6970cba0b3bf1ce1299ca2424530a3e7/img/pantherdb.PNG)
