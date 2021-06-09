@@ -55,3 +55,12 @@
 `cat  *.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K9me9_SJSA1.merge.hg19.bed`
 
 ![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/fad64b947423bc562e60689da522b157aedbbde7/img/merge.PNG)
+
+### Вторичная структура DeepZ
+Скачиваем файл со вторичной стр-рой ДНК, строим распределение длин участков вторичной стр-ры ДНК, смотрим, где располагаются участки стр-ры ДНК относительно аннотированных генов
+
+
+<p float="left">
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/4b530216b8a1aa135b33e67c036721938bd12f10/img/len_hist.DeepZ.png" width="450" />
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/4b530216b8a1aa135b33e67c036721938bd12f10/img/chip_seeker.DeepZ.plotAnnoPie.png" width="450" /> 
+</p>
