@@ -9,11 +9,11 @@
 
 `zcat ENCFF157SWY.bed.gz | cut -f1-5 > H3K9me9_SJSA1.ENCFF157SWY.hg38.bed`
 
-Гистограммы экпериментов: 
+Гистограммы длин: 
 
 <p float="left">
-  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF157SWY.hg38.png" width="400" />
-  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF157SWY.hg38.png" width="400" /> 
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF157SWY.hg38.png" width="500" />
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF921OTR.hg38.png" width="500" /> 
 </p>
 
 **Переводим координаты из hg38 в hg19**, скачиваем необходимые данные о переводе для liftOver
@@ -23,5 +23,12 @@
 `liftOver H3K9me9_SJSA1.ENCFF921OTR.hg38.bed hg38ToHg19.over.chain.gz H3K9me9_SJSA1.ENCFF921OTR.hg19.bed H3K9me9_SJSA1.ENCFF921OTR.unmapped.bed`
 
 `liftOver H3K9me9_SJSA1.ENCFF157SWY.hg38.bed hg38ToHg19.over.chain.gz H3K9me9_SJSA1.ENCFF157SWY.hg19.bed H3K9me9_SJSA1.ENCFF157SWY.unmapped.bed`
+
+Гистограммы длин: 
+
+<p float="left">
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF157SWY.hg19.png" width="500" />
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/c97f17ea87ad33de5c881e289d12c310bf5b8c9b/img/len_hist.H3K9me9_SJSA1.ENCFF921OTR.hg19.png" width="500" /> 
+</p>
 
 **Строим гистогограммы длин участков**
