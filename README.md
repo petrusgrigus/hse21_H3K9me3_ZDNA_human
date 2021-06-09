@@ -52,12 +52,14 @@
 
 ### Объединение наборов
 Объединяем два набора отфильтрованных ChIP-seq пиков с помощью утилиты bedtools merge
+
 `cat  *.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K9me9_SJSA1.merge.hg19.bed`
 
 ![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/fad64b947423bc562e60689da522b157aedbbde7/img/merge.PNG)
 
 ### Вторичная структура DeepZ
 Скачиваем файл со вторичной стр-рой ДНК, строим распределение длин участков вторичной стр-ры ДНК, смотрим, где располагаются участки стр-ры ДНК относительно аннотированных генов
+
 `wget https://raw.githubusercontent.com/vanya-antonov/hse21_H3K4me3_ZDNA_human/main/data/DeepZ.bed`
 
 <p float="left">
@@ -69,5 +71,10 @@
 
 ## Пересечения гистоновой меткой и стр-рами ДНК
 Находим пересечения, строим гистограмму
+
 `bedtools intersect -a DeepZ.bed -b H3K9me9_SJSA1.merge.hg19.bed > H3K9me9_SJSA1.intersect_with_DeepZ.bed`
 ![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/0af1b11c009fce04ac75dc00b78c1101b88395e0/img/len_hist.H3K9me9_SJSA1.intersect_with_DeepZ.png)
+
+
+## Визуализируем в геномном браузере
+Визуализируем в геномном браузере исходные участки стр-ры ДНК, а также их пересечения с гистоновой меткой
