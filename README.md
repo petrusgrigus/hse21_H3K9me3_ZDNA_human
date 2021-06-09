@@ -53,3 +53,5 @@
 ### Объединение наборов
 Объединяем два набора отфильтрованных ChIP-seq пиков с помощью утилиты bedtools merge
 `cat  *.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K9me9_SJSA1.merge.hg19.bed`
+
+![](https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/fad64b947423bc562e60689da522b157aedbbde7/img/merge.PNG)
