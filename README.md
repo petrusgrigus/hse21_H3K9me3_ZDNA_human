@@ -12,7 +12,7 @@
 Гистограммы экпериментов: 
 
 <object data="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/raw/main/img/len_hist.H3K9me9_SJSA1.ENCFF921OTR.hg38.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://yoursite.com/the.pdf">
+    <embed src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/raw/main/img/len_hist.H3K9me9_SJSA1.ENCFF921OTR.hg38.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
     </embed>
 </object>
