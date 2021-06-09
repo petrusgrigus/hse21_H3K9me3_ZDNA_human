@@ -45,10 +45,11 @@
 Смотрим, где располагаются пики гистоновой метки относительно аннотированных генов
 
 <p float="left">
-  <figure>
-  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/b0b45867b24ed6b1ebe890b82b261c7f85d12ddb/img/chip_seeker.H3K9me9_SJSA1.ENCFF157SWY.hg19.filtered.plotAnnoPie.png" width="450" /> <figcaption>ENCFF157SWY</figcaption>
-    </figure>
-   <figure>
-  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/b0b45867b24ed6b1ebe890b82b261c7f85d12ddb/img/chip_seeker.H3K9me9_SJSA1.ENCFF921OTR.hg19.filtered.plotAnnoPie.png" width="450" />  <figcaption>ENCFF921OTR</figcaption>
-     </figure>
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/b0b45867b24ed6b1ebe890b82b261c7f85d12ddb/img/chip_seeker.H3K9me9_SJSA1.ENCFF157SWY.hg19.filtered.plotAnnoPie.png" width="450" /> 
+  <img src="https://github.com/petrusgrigus/hse21_H3K9me3_ZDNA_human/blob/b0b45867b24ed6b1ebe890b82b261c7f85d12ddb/img/chip_seeker.H3K9me9_SJSA1.ENCFF921OTR.hg19.filtered.plotAnnoPie.png" width="450" />  
+
 </p>
+
+### Объединение наборов
+Объединяем два набора отфильтрованных ChIP-seq пиков с помощью утилиты bedtools merge
+`cat  *.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K9me9_SJSA1.merge.hg19.bed`
